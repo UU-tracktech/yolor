@@ -16,8 +16,12 @@ import yaml
 from PIL import Image
 from scipy.signal import butter, filtfilt
 
-from processor.pipeline.detection.yolor.utils.general import xywh2xyxy, xyxy2xywh
-from processor.pipeline.detection.yolor.utils.metrics import fitness
+try:
+    from utils.general import xywh2xyxy, xyxy2xywh
+    from utils.metrics import fitness
+except ImportError:
+    from processor.pipeline.detection.yolor.utils.general import xywh2xyxy, xyxy2xywh
+    from processor.pipeline.detection.yolor.utils.metrics import fitness
 
 # Settings
 matplotlib.use('Agg')  # for writing to files only

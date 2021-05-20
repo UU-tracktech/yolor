@@ -1,6 +1,9 @@
 import torch.nn.functional as F
 
-from processor.pipeline.detection.yolor.utils.general import *
+try:
+    from utils.general import *
+except ImportError:
+    from processor.pipeline.detection.yolor.utils.general import *
 
 import torch
 from torch import nn

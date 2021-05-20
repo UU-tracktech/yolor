@@ -2,7 +2,10 @@ import argparse
 
 import torch
 
-from processor.pipeline.detection.yolor.utils.google_utils import attempt_download
+try:
+    from utils.google_utils import attempt_download
+except ImportError:
+    from processor.pipeline.detection.yolor.utils.google_utils import attempt_download
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
