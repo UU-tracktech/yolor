@@ -22,10 +22,10 @@ try:
     from utils.metrics import fitness, fitness_p, fitness_r, fitness_ap50, fitness_ap, fitness_f
     from utils.torch_utils import init_torch_seeds
 except ImportError:
-    from processor.pipeline.detection.yolor.src.utils.google_utils import gsutil_getsize
-    from processor.pipeline.detection.yolor.src.utils.metrics import fitness, fitness_p, fitness_r, \
+    from processor.pipeline.detection.yolor.utils.google_utils import gsutil_getsize
+    from processor.pipeline.detection.yolor.utils.metrics import fitness, fitness_p, fitness_r, \
         fitness_ap50, fitness_ap, fitness_f
-    from processor.pipeline.detection.yolor.src.utils.torch_utils import init_torch_seeds
+    from processor.pipeline.detection.yolor.utils.torch_utils import init_torch_seeds
 
 # Set printoptions
 torch.set_printoptions(linewidth=320, precision=5, profile='long')

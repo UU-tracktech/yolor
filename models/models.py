@@ -4,10 +4,10 @@ try:
     from utils.parse_config import *
     from utils import torch_utils
 except ImportError:
-    from processor.pipeline.detection.yolor.src.utils.google_utils import *
-    from processor.pipeline.detection.yolor.src.utils.layers import *
-    from processor.pipeline.detection.yolor.src.utils.parse_config import *
-    from processor.pipeline.detection.yolor.src.utils import torch_utils
+    from processor.pipeline.detection.yolor.utils.google_utils import *
+    from processor.pipeline.detection.yolor.utils.layers import *
+    from processor.pipeline.detection.yolor.utils.parse_config import *
+    from processor.pipeline.detection.yolor.utils import torch_utils
 
 ONNX_EXPORT = False
 
