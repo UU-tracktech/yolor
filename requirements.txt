@@ -28,3 +28,6 @@
 # extras --------------------------------------
 thop  # FLOPS computation
 pycocotool>=2.0  # COCO mAP
+
+# Downloading google drive weights file -------
+googledrivedownloader
